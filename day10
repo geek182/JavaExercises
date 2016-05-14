@@ -14,44 +14,32 @@ public class day10 {
         
         char[] binaryTochar = numTobinary.toCharArray();
         
-        int atual = 0 ;
+        int contador = 0 ;
+        int temp = 0 ;
         int maximo = 0 ; 
         
         for(int i = 0 ; i < binaryTochar.length ; i++){
            //System.out.println(binaryTochar[i]) ;
-          
-            
-            
-            if(binaryTochar[i] == '1' ){
-               atual += 1 ;
-                
-               
-              System.out.println(atual) ;
-              
-                //pega a proxima char e valida se é 1
-                 
-                    if(atual > maximo ){
-                    maximo = atual ;
-                   
-                }
-                
-                else{
-                    
-                    atual = 0 ;
-                }
-                
-            }
-           
-            else {
-                
-                atual = 0 ;
-            }
-            
-            
-        }
-        
-        System.out.println(maximo) ;
-    }
-    
-}
+       
+     if(binaryTochar[i] == '1' ){
+               contador += 1 ;
+               temp += 1 ;
 
+              //System.out.println("valor contador " + contador  + "antes "+ maximo) ;
+              if (contador > maximo) {
+           maximo = contador ;
+          // System.out.println("valor do maximo" + maximo) ;
+           
+            }
+     
+     
+   
+}
+     else{
+    	 contador = 0 ;
+    	// System.out.println("dif de 0 - "+ contador );
+     }
+     }
+        System.out.println(maximo)   ;
+}
+}
