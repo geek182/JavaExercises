@@ -16,24 +16,24 @@ class Student extends Person{
         }
        
    int average = sum/2 ;
-    if (average <= 90 && average <= 100 ){
-        return 'O' ;
+    if (average <= 40){
+        return 'T' ;
     }
-    else if (average <= 80 && average < 90){
-            return 'E' ;
+    else if (average >= 44  && average < 55){
+            return 'D' ;
             }
   
-    else if(average <= 70 && average < 80 ){
-            return 'A' ;
+    else if(average >=55 && average < 70 ){
+            return 'P' ;
     } 
-    else if(average <= 55 && average < 70 ){
-     return 'P' ;
+    else if(average >=70 && average < 80 ){
+     return 'A' ;
  }
-    else if (average <= 40 && average < 55 ){
+    else if (average >=80 && average < 90 ){
      return 'D' ;
  }
 else {
-    return 'T' ; 
+    return 'O' ; 
 }
 }
 }
