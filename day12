@@ -15,7 +15,7 @@ class Student extends Person{
          sum += testScores[i] ;
         }
        
-   int average = sum/2 ;
+   int average = sum/testScores.length ;
     if (average <= 40){
         return 'T' ;
     }
@@ -30,7 +30,7 @@ class Student extends Person{
      return 'A' ;
  }
     else if (average >=80 && average < 90 ){
-     return 'D' ;
+     return 'E' ;
  }
 else {
     return 'O' ; 
