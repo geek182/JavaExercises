@@ -1,0 +1,56 @@
+import java.util.LinkedList;
+import java.util.Stack;
+
+public class Queue {
+
+	LinkedList queue = new LinkedList();
+	
+	//Constructor
+	public Queue(){
+		queue = new LinkedList();
+	}
+	
+	public boolean isEmpty(){
+		return queue.isEmpty() ;
+	}
+	
+	//size of queue
+	public int size(){
+		return queue.size() ;
+	}
+	
+	// enqueue 
+	public void enqueue(int n){
+		queue.addLast(n);
+	}
+	
+	public int dequeue(){
+		return (int) queue.remove(0);
+	}
+	
+	public int peek(){
+	return (int)queue.getLast();
+	}
+	
+	public static void main(String[] args){
+		Stack<String> StringStack = new Stack<>() ;
+
+		
+		Queue numberQueue = new Queue();
+		numberQueue.enqueue(1);
+		numberQueue.enqueue(2);
+		numberQueue.enqueue(3);
+		numberQueue.enqueue(4);
+	
+		
+		System.out.println("Size: " + numberQueue.size());
+		System.out.println("Last:  " + numberQueue.peek());
+		System.out.println("First out: " + numberQueue.dequeue());
+		System.out.println("Last: " + numberQueue.peek());
+		System.out.println("Second out: " + numberQueue.dequeue());
+		System.out.println("Last: " + numberQueue.peek());
+		System.out.println("Third out: " + numberQueue.dequeue());
+		
+		
+	}
+}
