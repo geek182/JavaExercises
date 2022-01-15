@@ -20,6 +20,20 @@ public class ReverseArrayChallenge {
             }
         }
 
+    /*
+    Below is the instructor version
+     */
+
+    private static void reverseInstructorVersion(int[] array){
+        int maxIndex = array.length -1;
+        int halfLenght = array.length /2;
+        for(int i =0; i<halfLenght; i++){
+            int temp = array[i];
+            array[i] = array[maxIndex -1];
+            array[maxIndex - 1] = temp;
+        }
+    }
+
     public static void main(String[] args){
         int[] myarray = {100,200,300,400,500};
         for (int i : myarray) {
