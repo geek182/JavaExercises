@@ -26,8 +26,8 @@ public class ReverseArrayChallenge {
 
     private static void reverseInstructorVersion(int[] array){
         int maxIndex = array.length -1;
-        int halfLenght = array.length /2;
-        for(int i =0; i<halfLenght; i++){
+        int halfLength = array.length /2;
+        for(int i =0; i<halfLength; i++){
             int temp = array[i];
             array[i] = array[maxIndex -1];
             array[maxIndex - 1] = temp;
