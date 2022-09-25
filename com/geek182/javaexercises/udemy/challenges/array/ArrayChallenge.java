@@ -1,4 +1,4 @@
-package com.geek182.javaexercises.udemy.challenges;
+package com.geek182.javaexercises.udemy.challenges.array;
 
 /*
 Create a program using arrays that sort a list of integers in descending order.
@@ -53,7 +53,7 @@ public class ArrayChallenge{
 
     /*
     Below the instructor version:
-    Of course, it is simpler than mine version :)
+    Of course, it is simpler and better than mine version :)
     */
 
     public static int[] sortIntegers(int[] array){
@@ -106,7 +106,7 @@ public class ArrayChallenge{
         ArrayChallenge myarray = new ArrayChallenge(5);
     }
     /*
-    Checking the instructor version afterwards it becomes clear that I could use static methods so won't be required
+    Checking the instructor version afterwards it became clear that I could use static methods so won't be required
     to instantiate them on the main method.
     Something like:
 

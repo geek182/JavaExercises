@@ -1,4 +1,4 @@
-package com.geek182.javaexercises.udemy.challenges;
+package com.geek182.javaexercises.udemy.challenges.array;
 
 import java.util.Scanner;
 /*
